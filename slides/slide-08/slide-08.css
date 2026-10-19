@@ -147,7 +147,8 @@
   gap: 32px;
   background: #efebe2;
   border: 1px solid rgba(0, 0, 0, 0.06);
-  border-radius: 12px;
+  border-left: 4px solid #e11d24;
+  border-radius: 6px;
   padding: 16px 28px;
   margin-bottom: 26px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
@@ -193,9 +194,9 @@
 }
 
 #slide-8 .pos-divider {
-  width: 1px;
+  width: 2px;
   height: 42px;
-  background: rgba(0, 0, 0, 0.1);
+  background: #e11d24;
 }
 
 #slide-8 .pos-period {

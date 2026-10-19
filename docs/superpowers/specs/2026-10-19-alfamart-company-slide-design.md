@@ -18,7 +18,7 @@ Dokumen ini menetapkan spesifikasi desain untuk menyisipkan slide baru yaitu **S
 - **Index Tag**: `03 / PENGALAMAN KERJA • ALFAMART DOSSIER`
 
 ### 2.2 Kolom Kiri: Profil Eksekutif & Ringkasan Peran (~42% Lebar)
-- **Kicker / Eyebrow**: `PENGALAMAN KERJA PROFESIONAL • REKAYASA SISTEM ENTERPRISE`
+- **Kicker / Eyebrow**: `PENGALAMAN KERJA PROFESIONAL • REKAYASA PENGEMBANGAN SISTEM`
 - **Judul Utama**: `PT Sumber Alfaria Trijaya Tbk`
 - **Subtitle Peran**: `Software Engineer Intern — Property Development & BMES`
 - **Aksen Garis**: `.red-rule`

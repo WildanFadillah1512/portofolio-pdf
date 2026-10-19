@@ -154,6 +154,53 @@ button {
 .crosshair-br { bottom: 40px; right: 40px; }
 
 /* ----------------------------------------------------
+   EDITORIAL MASTHEAD COMPONENT (LIGHT SLIDES)
+---------------------------------------------------- */
+.masthead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 16px;
+}
+
+.masthead-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.brand-block {
+  width: 12px;
+  height: 12px;
+  background: var(--red);
+  flex-shrink: 0;
+}
+
+.masthead-role {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.masthead-sep {
+  color: var(--line);
+  font-weight: 300;
+}
+
+.masthead-index {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ----------------------------------------------------
    SECTION DIVIDER / CHAPTER SLIDES (SLIDE 1, 3, 5, 7)
 ---------------------------------------------------- */
 .slide-dark {

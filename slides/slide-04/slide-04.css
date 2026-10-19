@@ -154,12 +154,14 @@
   padding: 10px 14px;
   background: var(--paper-card);
   border: 1px solid var(--line);
+  border-left: 4px solid var(--red);
   border-radius: 2px;
   transition: border-color 150ms ease, background 150ms ease;
 }
 
 .matrix-item:hover {
-  border-color: var(--red);
+  border-color: var(--line);
+  border-left-color: #b91c1c;
   background: #ffffff;
 }
 
