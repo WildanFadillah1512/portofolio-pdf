@@ -1,80 +1,375 @@
-.dot-yellow { background: #ffbd2e; }
-.dot-green { background: #27c93f; }
-
-.canvas-spec-label {
-  font-size: 10px;
-  font-weight: 750;
-  font-family: monospace;
-  letter-spacing: 0.06em;
-  color: var(--ink);
+/* ----------------------------------------------------
+   SLIDE 11: SPARTA DC-DEVELOPMENT — DETAIL KONTRIBUSI & REKAYASA (EDITORIAL SPLIT)
+---------------------------------------------------- */
+.sp-dc-split-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-sizing: border-box;
 }
 
-.canvas-header-actions {
+/* ====================================================
+   LEFT PANEL (WARM CREAM EDITORIAL)
+==================================================== */
+.sp-dc-left-panel {
+  background: #f6f4ee;
+  padding: 38px 50px 24px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #111827;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sp-dc-left-topline {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1.5px solid #111827;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
 }
 
-.canvas-badge-live {
-  font-size: 9px;
-  font-weight: 750;
-  letter-spacing: 0.08em;
-  padding: 2px 7px;
-  border-radius: 2px;
-  background: rgba(34, 197, 94, 0.12);
-  color: #16a34a;
-  border: 1px solid rgba(34, 197, 94, 0.3);
-  font-family: monospace;
-}
-
-.canvas-doc-id {
-  font-size: 9.5px;
-  font-weight: 600;
-  font-family: monospace;
-  color: var(--muted);
-}
-
-.stage-zoom-btn {
-  font-size: 10px;
-  font-weight: 600;
-  padding: 3px 9px;
-  border-radius: 3px;
-  border: 1px solid var(--line);
-  background: #ffffff;
-  color: var(--ink);
-  cursor: pointer;
-  transition: all 140ms ease;
-  display: inline-flex;
+.sp-dc-top-left {
+  display: flex;
   align-items: center;
-  gap: 4px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
-  font-family: inherit;
+  gap: 8px;
+  color: #111827;
 }
 
-.stage-zoom-btn:hover {
-  background: var(--ink);
-  color: #ffffff;
-  border-color: var(--ink);
+.sp-dc-sq {
+  color: #e65f2b;
+  font-size: 11px;
 }
 
-.stage-viewport {
-  flex: 1;
+.sp-dc-top-right {
+  color: #111827;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+/* Left Hero */
+.sp-dc-left-hero {
+  margin: 10px 0 8px;
+}
+
+.sp-dc-main-title {
+  font-size: 56px;
+  font-weight: 900;
+  color: #e65f2b;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin: 0 0 8px;
+  white-space: nowrap;
+}
+
+.sp-dc-sub-title {
+  font-size: 26px;
+  font-weight: 850;
+  color: #111827;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin: 0 0 10px;
+}
+
+.sp-dc-lead {
+  font-size: 14.5px;
+  line-height: 1.48;
+  color: #374151;
+  margin: 0;
+  max-width: 580px;
+  font-weight: 450;
+}
+
+/* Timeline */
+.sp-dc-timeline-wrap {
+  margin: 4px 0 8px;
+}
+
+.sp-dc-section-heading {
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: #111827;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+
+.sp-dc-timeline {
   position: relative;
-  overflow: hidden;
-  background: #0f1117;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sp-dc-timeline::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 18px;
+  left: 18px;
+  width: 2px;
+  background: #cbd5e1;
+  z-index: 1;
+}
+
+.sp-dc-time-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.sp-dc-time-marker {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #fff5ee;
+  border: 1.5px solid #e65f2b;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: zoom-in;
-  padding: 10px;
-  min-height: 0;
+  flex-shrink: 0;
+  color: #e65f2b;
+  box-shadow: 0 2px 6px rgba(230, 95, 43, 0.12);
 }
 
-.stage-viewport .stage-img {
-  display: none;
-  max-width: calc(100% - 12px);
-  max-height: calc(100% - 12px);
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  border-radius: 3px;
+.sp-dc-svg-icon {
+  width: 17px;
+  height: 17px;
+  display: block;
+}
+
+.sp-dc-time-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sp-dc-time-title {
+  font-size: 15.5px;
+  font-weight: 850;
+  color: #111827;
+  letter-spacing: -0.015em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.sp-dc-time-desc {
+  font-size: 13px;
+  line-height: 1.38;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Left Footer */
+.sp-dc-left-footer {
+  padding-top: 12px;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.12);
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #4b5563;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+/* ====================================================
+   RIGHT PANEL (DEEP BLACK TECHNICAL)
+==================================================== */
+.sp-dc-right-panel {
+  background: #0b0c10;
+  padding: 38px 50px 24px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.sp-dc-right-topline {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+.sp-dc-top-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.sp-dc-sq-dark {
+  color: #e65f2b;
+  font-size: 11px;
+}
+
+.sp-dc-right-section {
+  margin: 6px 0;
+}
+
+.sp-dc-sec-heading-light {
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+/* 2x2 Stats Grid */
+.sp-dc-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #14151a;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.sp-dc-stat-item {
+  padding: 16px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sp-dc-stat-item:nth-child(1) {
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.sp-dc-stat-item:nth-child(2) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.sp-dc-stat-item:nth-child(3) {
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.dc-orange-text {
+  color: #e65f2b;
+}
+
+.sp-dc-stat-num {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  margin-bottom: 6px;
+}
+
+.sp-dc-stat-label {
+  font-size: 13px;
+  color: #94a3b8;
+  line-height: 1.35;
+  font-weight: 500;
+}
+
+/* Innovations Grid */
+.sp-dc-innovations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.sp-dc-inno-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sp-dc-inno-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sp-dc-inno-title {
+  font-size: 14.5px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.sp-dc-inno-desc {
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Technology Box */
+.sp-dc-tech-box {
+  background: #14151a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.sp-dc-tech-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sp-dc-tech-label {
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  color: #e65f2b;
+  text-transform: uppercase;
+}
+
+.sp-dc-tech-list {
+  font-size: 12.5px;
+  color: #e2e8f0;
+  font-weight: 550;
+  line-height: 1.4;
+}
+
+.sp-dc-tech-crest {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sp-dc-pg-svg {
+  width: 30px;
+  height: 30px;
+  opacity: 0.9;
+}
+
+/* Right Footer */
+.sp-dc-right-footer {
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}

@@ -29,7 +29,7 @@ Slide 09 presents the technical contribution and case study of the **SPARTA Buil
 
 ### A. Left Panel (Warm Cream Editorial)
 1. **Topline Navigation**:
-   - `■ PENGALAMAN KERJA 01 / DETAIL KONTRIBUSI` and `03 / PROYEK UTAMA`
+   - `■ PENGALAMAN KERJA 01 / DETAIL KONTRIBUSI` and `03 / SPARTA BUILDING`
    - Size: `12.5px`, Weight: `800`, Letter-spacing: `0.12em`.
    - Bottom border: `1.5px solid #111827`.
 2. **Display Title (`SPARTA BUILDING`)**:
