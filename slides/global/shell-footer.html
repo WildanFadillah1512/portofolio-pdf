@@ -1,0 +1,48 @@
+    </div>
+
+    <!-- Lightbox Zoom Modal for High-Resolution Inspection -->
+    <div id="lightbox-modal" class="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true"
+      aria-label="Pratinjau Resolusi Tinggi">
+      <div class="lightbox-backdrop"></div>
+      <div class="lightbox-dialog">
+        <header class="lightbox-header">
+          <div class="lightbox-info">
+            <span class="lightbox-badge">HIGH RESOLUTION INSPECT</span>
+            <h3 class="lightbox-title">Pratinjau Aset Sistem</h3>
+          </div>
+          <button type="button" class="lightbox-close" aria-label="Tutup pratinjau">✕ Tutup (Esc)</button>
+        </header>
+        <div class="lightbox-canvas">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+            alt="Pratinjau resolusi penuh" class="lightbox-img" />
+        </div>
+        <footer class="lightbox-footer">
+          <span class="lightbox-caption-text">Dokumentasi Sistem PT Sumber Alfaria Trijaya Tbk</span>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Navigation Pill Bar -->
+    <nav class="nav" aria-label="Kontrol slide portofolio">
+      <button type="button" data-prev aria-label="Slide sebelumnya" title="Sebelumnya (←)">
+        ←
+      </button>
+      <span class="counter" data-counter aria-live="polite">01 / 12</span>
+      <button type="button" data-next aria-label="Slide berikutnya" title="Berikutnya (→)">
+        →
+      </button>
+      <button type="button" data-fullscreen aria-label="Alihkan layar penuh" title="Layar Penuh (F)">
+        ⛶
+      </button>
+    </nav>
+
+    <div class="hint">← → navigasi &middot; F layar penuh</div>
+    <div class="progress-track" aria-hidden="true">
+      <div class="progress-bar" data-progress></div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

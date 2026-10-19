@@ -1,0 +1,109 @@
+<!-- Slide 12: SPARTA DC Development — Fokus Assets -->
+      <section class="slide" id="slide-12" aria-labelledby="sparta-dc-assets-heading">
+        <div class="assets-layout">
+          <h2 id="sparta-dc-assets-heading" class="sr-only">SPARTA DC &mdash; Platform Monitoring Transaksi &amp; Dokumen DC</h2>
+          <!-- Top Masthead Bar with Segmented Switcher for DC -->
+          <header class="dossier-masthead" data-step>
+            <div class="dossier-brand">
+              <div class="dossier-logo-wrap">
+                <img src="assets/alfamart-logo.png" alt="Logo Alfamart" class="dossier-logo-img" />
+              </div>
+              <div class="dossier-identity">
+                <div class="dossier-tagline">
+                  <span class="dossier-dot" aria-hidden="true" style="background: #e65f2b;"></span>
+                  <span>PT SUMBER ALFARIA TRIJAYA TBK &bull; DC (DISTRIBUTION CENTER) DEVELOPMENT</span>
+                </div>
+                <div class="dossier-role-row">
+                  <span class="dossier-role">Fullstack Engineer &bull; Migrasi Mandiri</span>
+                  <span class="dossier-sep">&bull;</span>
+                  <span class="dossier-period">Agustus 2026 &ndash; November 2026</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Segmented Switcher for DC Development Assets -->
+            <div class="asset-selector-pills" role="tablist">
+              <button type="button" class="asset-pill-btn is-active" data-asset-group="dc" data-asset-target="dc-dash">
+                <span class="pill-icon" aria-hidden="true">💻</span>
+                <span>Platform Transaksi &amp; Dokumen DC (Dashboard)</span>
+              </button>
+              <button type="button" class="asset-pill-btn" data-asset-group="dc" data-asset-target="dc-flow">
+                <span class="pill-icon" aria-hidden="true">🔄</span>
+                <span>Diagram Alur Renovasi &amp; Tender DC (Flowchart)</span>
+              </button>
+            </div>
+
+            <div class="dossier-meta-group">
+              <button type="button" class="stage-zoom-btn" title="Perbesar Tampilan Resolusi Penuh">
+                ⤢ Mode Inspeksi (HD)
+              </button>
+              <span class="dossier-index" style="color: #e65f2b;">03 / ALFAMART &bull; 05 (DC ASSETS)</span>
+            </div>
+          </header>
+
+          <!-- Panoramic Full-Width Asset Showcase Frame -->
+          <div class="assets-showcase-frame" data-step style="--d: 80ms">
+            <div class="canvas-header-strip">
+              <div class="canvas-header-left">
+                <div class="window-dots" aria-hidden="true">
+                  <span class="wdot dot-red"></span>
+                  <span class="wdot dot-yellow"></span>
+                  <span class="wdot dot-green"></span>
+                </div>
+                <span class="canvas-spec-label" id="dc-asset-title">
+                  SPARTA DC DEVELOPMENT &mdash; PLATFORM REKAP PROYEK &amp; DOKUMEN GUDANG
+                </span>
+              </div>
+              <div class="canvas-header-actions">
+                <span class="canvas-badge-live" id="dc-status-badge"
+                  style="color: #e65f2b; background: rgba(230,95,43,0.12); border-color: rgba(230,95,43,0.3);">
+                  DC PORTAL
+                </span>
+                <span class="canvas-doc-id" id="dc-doc-ref">REF: AF-DC-DEV-UI</span>
+              </div>
+            </div>
+
+            <!-- Viewport for DC Assets -->
+            <div class="stage-viewport" id="dc-viewport">
+              <img src="assets/dashboard dc.png"
+                alt="Dashboard SPARTA DC Development — Navigasi Proyek & Transaksi Gudang" class="stage-img is-active"
+                data-asset-id="dc-dash"
+                data-title="SPARTA DC DEVELOPMENT &mdash; PLATFORM REKAP PROYEK &amp; DOKUMEN GUDANG"
+                data-badge="DC PORTAL" data-ref="REF: AF-DC-DEV-UI"
+                data-annotation-1="Arsitektur Mandiri Next.js: Separasi modul DC dari monolitik ke Next.js App Router, Prisma ORM, PostgreSQL &amp; Shadcn UI."
+                data-annotation-2="Manajemen Arsip 3 Tahap: Wadah pemrosesan berkas backlog proyek gudang lama dan baru (Pembangunan, Renovasi, &amp; Perluasan DC)."
+                data-annotation-3="Drive Tersarang &amp; Audit Log: Struktur folder bersarang Google Drive API untuk berkas teknis gudang, versioning dokumen &amp; audit trail." />
+
+              <img src="assets/flowchart renovasi DC.png"
+                alt="Flowchart Renovasi DC — Approval Berjenjang, Pengajuan Fungsi Ruang, dan Tender" class="stage-img"
+                data-asset-id="dc-flow"
+                data-title="DIAGRAM ALUR RENOVASI, TENDER &amp; APPROVAL BERJENJANG DC (SPARTA DC)"
+                data-badge="SPECIFICATION" data-ref="REF: AF-DC-DEV-FLW"
+                data-annotation-1="Fase PFR Gudang &amp; Nilai OE: Usulan Perubahan Fungsi Ruang (dc_fungsi_ruang), validasi spesifikasi sipil/ME, &amp; estimasi Owner Estimate."
+                data-annotation-2="Fase Tender Proyek &gt; 1 Miliar: Seleksi Pra-Kualifikasi min. 3 vendor terverifikasi, Aanwijzing lapangan, &amp; Berita Acara tender by OE."
+                data-annotation-3="Fase Otorisasi 7 Tingkat: Approval hirarki bertingkat (BM ➔ GM ➔ Specialist ➔ Director), Tiered Visibility, &amp; penyesuaian KTK." />
+            </div>
+
+            <!-- Dynamic Bottom 3-Node Annotation Bar -->
+            <div class="assets-annotation-bar">
+              <div class="annotation-node">
+                <span class="node-tag" style="color: #e65f2b;">MODUL 01</span>
+                <span class="node-text" id="dc-ann-1">Arsitektur Mandiri Next.js: Separasi modul DC dari monolitik ke
+                  Next.js App Router, Prisma ORM, PostgreSQL &amp; Shadcn UI.</span>
+              </div>
+              <div class="annotation-sep" aria-hidden="true"></div>
+              <div class="annotation-node">
+                <span class="node-tag" style="color: #e65f2b;">MODUL 02</span>
+                <span class="node-text" id="dc-ann-2">Manajemen Arsip 3 Tahap: Wadah pemrosesan berkas backlog proyek
+                  gudang lama dan baru (Pembangunan, Renovasi, &amp; Perluasan DC).</span>
+              </div>
+              <div class="annotation-sep" aria-hidden="true"></div>
+              <div class="annotation-node">
+                <span class="node-tag" style="color: #e65f2b;">MODUL 03</span>
+                <span class="node-text" id="dc-ann-3">Drive Tersarang &amp; Audit Log: Struktur folder bersarang Google
+                  Drive API untuk berkas teknis gudang, versioning dokumen &amp; audit trail.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

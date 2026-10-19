@@ -1,0 +1,13 @@
+{
+  "name": "portofolio-wildan-fadillah",
+  "version": "1.0.0",
+  "description": "Portofolio Digital Wildan Fadillah — Software Engineer",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "node build.js --watch",
+    "dev": "node build.js --watch"
+  },
+  "keywords": ["portfolio", "slide-deck", "software-engineer"],
+  "author": "Wildan Fadillah",
+  "license": "ISC"
+}
