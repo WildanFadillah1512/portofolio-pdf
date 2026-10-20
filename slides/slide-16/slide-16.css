@@ -1,0 +1,322 @@
+/* ----------------------------------------------------
+   SLIDE 12: SPARTA DC-DEVELOPMENT — DOKUMENTASI ANTARMUKA PRODUKSI (EDITORIAL SPLIT)
+---------------------------------------------------- */
+.sb16-split-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 34% 66%;
+  box-sizing: border-box;
+}
+
+/* ====================================================
+   LEFT PANEL (WARM CREAM EDITORIAL)
+==================================================== */
+.sb16-left-panel {
+  background: #f6f4ee;
+  padding: 44px 48px 30px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #111827;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sb16-left-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1.5px solid #111827;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.sb16-top-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #111827;
+}
+
+.sb16-dc-sq {
+  color: var(--sa-gold, #b8860b);
+  font-size: 11px;
+}
+
+.sb16-top-right {
+  color: #111827;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+/* Hero Section */
+.sb16-left-hero {
+  margin: 14px 0 16px;
+}
+
+.sb16-eyebrow {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 850;
+  color: var(--sa-gold, #b8860b);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.sb16-main-title {
+  font-size: 46px;
+  font-weight: 900;
+  color: #111827;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  margin: 0 0 12px;
+}
+
+.sb16-orange-rule {
+  width: 44px;
+  height: 3.5px;
+  background: var(--sa-gold, #b8860b);
+  border-radius: 2px;
+  margin-bottom: 14px;
+}
+
+.sb16-lead {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #4b5563;
+  margin: 0;
+  font-weight: 450;
+  max-width: 480px;
+}
+
+/* 4 Feature Cards */
+.sb16-cards-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin: 10px 0 16px;
+}
+
+.sb16-mod-card {
+  background: #efebe2;
+  border-radius: 6px;
+  padding: 16px 22px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-left: 4px solid var(--sa-gold, #b8860b);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
+}
+
+.sb16-mod-card:hover {
+  background: #eae4d7;
+  border-left-color: #9a6f08;
+  transform: translateX(4px);
+  box-shadow: 0 4px 14px rgba(184, 134, 11, 0.12);
+}
+
+.sb16-card-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.sb16-card-num {
+  font-size: 15.5px;
+  font-weight: 900;
+  color: var(--sa-gold, #b8860b);
+  letter-spacing: 0.04em;
+}
+
+.sb16-card-title {
+  font-size: 15.5px;
+  font-weight: 850;
+  color: #111827;
+  letter-spacing: -0.015em;
+}
+
+.sb16-card-desc {
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: #64748b;
+  margin: 4px 0 0;
+}
+
+/* Left Footer */
+.sb16-left-footer {
+  padding-top: 14px;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 800;
+  color: #4b5563;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.sb16-footer-dc {
+  color: var(--sa-gold, #b8860b);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+/* ====================================================
+   RIGHT PANEL (DEEP BLACK TECHNICAL)
+==================================================== */
+.sb16-right-panel {
+  background: #0b0c10;
+  padding: 42px 48px 28px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.sb16-right-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+.sb16-top-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.sb16-dc-sq-dark {
+  color: var(--sa-gold, #b8860b);
+  font-size: 11px;
+}
+
+.sb16-top-meta-right {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+/* 2x2 Grid Screenshot Cards */
+.sb16-grid-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  margin: auto 0;
+  height: calc(100% - 90px);
+}
+
+.sb16-grid-card {
+  background: #14151a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.sb16-grid-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(184, 134, 11, 0.4);
+  box-shadow: 0 8px 24px rgba(184, 134, 11, 0.15);
+}
+
+.sb16-grid-header {
+  padding: 8px 14px;
+  background: #1a1c23;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.sb16-gh-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sb16-gh-num {
+  font-size: 11px;
+  font-weight: 900;
+  color: var(--sa-gold, #b8860b);
+  letter-spacing: 0.05em;
+}
+
+.sb16-gh-title {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #f1f5f9;
+}
+
+.sb16-gh-tag {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--sa-gold, #b8860b);
+  background: rgba(184, 134, 11, 0.12);
+  border: 1px solid rgba(184, 134, 11, 0.3);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.sb16-img-wrap {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #0d0e12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sb16-shot-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+/* Right Footer */
+.sb16-right-footer {
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+#slide-16 { --sa-gold: #b8860b; }
+.sb16-right-panel { --sa-gold: #f2b52d; }

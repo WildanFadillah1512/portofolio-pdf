@@ -1,0 +1,403 @@
+/* ----------------------------------------------------
+   SLIDE 14: PORTFOLIO SUBA ARCH — DETAIL KONTRIBUSI & REKAYASA (EDITORIAL SPLIT)
+---------------------------------------------------- */
+.sa14-split-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-sizing: border-box;
+}
+
+/* ====================================================
+   LEFT PANEL (WARM CREAM EDITORIAL)
+==================================================== */
+.sa14-left-panel {
+  background: #f6f4ee;
+  padding: 42px 52px 28px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #111827;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sa14-left-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1.5px solid #111827;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.sa14-top-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #111827;
+}
+
+.sa14-sq {
+  color: var(--sa-gold, #b8860b);
+  font-size: 11px;
+}
+
+.sa14-top-right {
+  color: #111827;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+/* Left Hero */
+.sa14-left-hero {
+  margin: 6px 0;
+}
+
+.sa14-main-title {
+  font-size: 44px;
+  font-weight: 900;
+  color: var(--sa-gold, #b8860b);
+  letter-spacing: -0.035em;
+  line-height: 1.04;
+  margin: 0;
+}
+
+.sa14-orange-rule {
+  width: 44px;
+  height: 3.5px;
+  background: var(--sa-gold, #b8860b);
+  border-radius: 2px;
+  margin: 12px 0 14px;
+}
+
+.sa14-sub-title {
+  font-size: 26px;
+  font-weight: 850;
+  color: #111827;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin: 0 0 10px;
+}
+
+.sa14-lead {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #374151;
+  margin: 0;
+  max-width: 620px;
+  font-weight: 450;
+}
+
+/* Timeline */
+.sa14-timeline-wrap {
+  margin: 4px 0 8px;
+}
+
+.sa14-section-heading {
+  font-size: 13.5px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: #111827;
+  text-transform: uppercase;
+  margin: 0 0 18px;
+}
+
+.sa14-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sa14-timeline::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  bottom: 21px;
+  left: 20px;
+  width: 2px;
+  background: #cbd5e1;
+  z-index: 1;
+}
+
+.sa14-time-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sa14-time-item:hover {
+  transform: translateX(4px);
+}
+
+.sa14-time-marker {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fff5ee;
+  border: 1.8px solid var(--sa-gold, #b8860b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--sa-gold, #b8860b);
+  box-shadow: 0 2px 6px rgba(184, 134, 11, 0.12);
+  margin-top: 1px;
+  transition: all 180ms ease;
+}
+
+.sa14-time-item:hover .sa14-time-marker {
+  background: #ffe6db;
+  border-color: #d44d18;
+  box-shadow: 0 4px 12px rgba(184, 134, 11, 0.22);
+}
+
+.sa14-svg-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.sa14-time-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-top: 1px;
+}
+
+.sa14-time-title {
+  font-size: 17px;
+  font-weight: 850;
+  color: #111827;
+  letter-spacing: -0.015em;
+  margin: 0;
+  line-height: 1.25;
+  transition: color 180ms ease;
+}
+
+.sa14-time-item:hover .sa14-time-title {
+  color: var(--sa-gold, #b8860b);
+}
+
+.sa14-time-desc {
+  font-size: 14px;
+  line-height: 1.48;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Left Footer */
+.sa14-left-footer {
+  padding-top: 14px;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.12);
+  font-size: 12px;
+  font-weight: 800;
+  color: #4b5563;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+/* ====================================================
+   RIGHT PANEL (DEEP BLACK TECHNICAL)
+==================================================== */
+.sa14-right-panel {
+  background: #0b0c10;
+  padding: 42px 52px 28px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.sa14-right-topline {
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+.sa14-top-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.sa14-sq-dark {
+  color: var(--sa-gold, #b8860b);
+  font-size: 11px;
+}
+
+.sa14-right-section {
+  margin: 6px 0;
+}
+
+.sa14-sec-heading-light {
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+/* 2x2 Stats Grid with Hairline Cross Dividers */
+.sa14-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sa14-stat-item {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 18px 14px 0;
+  box-sizing: border-box;
+}
+
+.sa14-stat-item:nth-child(2),
+.sa14-stat-item:nth-child(4) {
+  padding-left: 28px;
+  padding-right: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.sa14-stat-item:nth-child(1),
+.sa14-stat-item:nth-child(2) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 16px;
+}
+
+.sa14-stat-item:nth-child(3),
+.sa14-stat-item:nth-child(4) {
+  padding-top: 16px;
+}
+
+.sa14-gold-text {
+  color: var(--sa-gold, #b8860b);
+}
+
+.sa14-stat-num {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.sa14-stat-label {
+  font-size: 15px;
+  color: #94a3b8;
+  margin-top: 6px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+/* Innovations Grid */
+.sa14-innovations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.sa14-inno-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sa14-inno-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sa14-inno-title {
+  font-size: 14.5px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.sa14-inno-desc {
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Technology Box */
+.sa14-tech-box {
+  background: #14151a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.sa14-tech-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sa14-tech-label {
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  color: var(--sa-gold, #b8860b);
+  text-transform: uppercase;
+}
+
+.sa14-tech-list {
+  font-size: 12.5px;
+  color: #e2e8f0;
+  font-weight: 550;
+  line-height: 1.4;
+}
+
+.sa14-tech-crest {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sa14-pg-svg {
+  width: 30px;
+  height: 30px;
+  opacity: 0.9;
+}
+
+/* Right Footer */
+.sa14-right-footer {
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 12px;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+#slide-14 { --sa-gold: #b8860b; }
+.sa14-right-panel { --sa-gold: #f2b52d; }
+.sa14-tech-inner { flex: 1; }

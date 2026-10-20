@@ -1,0 +1,179 @@
+  font-weight: 550;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.key-badge.dark {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.chapter-code {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: rgba(255, 255, 255, 0.35);
+  font-family: monospace;
+}
+
+/* ----------------------------------------------------
+   SLIDE 06: ACADEMIC DOSSIER & MILESTONES
+---------------------------------------------------- */
+.academic-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--red);
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+}
+
+.stat-highlight {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.stat-val {
+  font-size: 46px;
+  font-weight: 850;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-max {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-left: 1px solid var(--line);
+  padding-left: 18px;
+}
+
+.stat-tag {
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.stat-title {
+  font-size: 15px;
+  font-weight: 750;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+.stat-sub {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 450;
+}
+
+.academic-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.academic-block-item {
+  padding: 14px 18px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  transition: border-color 150ms ease, transform 150ms ease;
+}
+
+.academic-block-item:hover {
+  border-color: var(--ink);
+  transform: translateX(4px);
+}
+
+.academic-block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.academic-badge {
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.academic-year {
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.academic-block-title {
+  font-size: 16px;
+  font-weight: 750;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+  margin-bottom: 4px;
+}
+
+.academic-block-desc {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--ink-secondary);
+  font-weight: 420;
+  margin: 0;
+}
+
+.campus-crest-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 50px;
+  height: 50px;
+  background: rgba(18, 18, 20, 0.88);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.campus-crest-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.spec-org-data {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.spec-org-logo {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}

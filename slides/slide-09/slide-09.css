@@ -1,0 +1,376 @@
+/* ----------------------------------------------------
+   SLIDE 09: SPARTA BUILDING — DETAIL KONTRIBUSI (EDITORIAL SPLIT)
+---------------------------------------------------- */
+.sparta-split-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-sizing: border-box;
+}
+
+/* ====================================================
+   LEFT PANEL (WARM CREAM EDITORIAL)
+==================================================== */
+.sparta-left-panel {
+  background: #f6f4ee;
+  padding: 42px 54px 28px 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #111827;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sp-left-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1.5px solid #111827;
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.sp-top-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #111827;
+}
+
+.sp-red-sq {
+  color: #e11d24;
+  font-size: 11px;
+}
+
+.sp-top-right {
+  color: #111827;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+/* Left Hero */
+.sp-left-hero {
+  margin: 14px 0 10px;
+}
+
+.sp-main-title {
+  font-size: 66px;
+  font-weight: 900;
+  color: #e11d24;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin: 0 0 10px;
+  white-space: nowrap;
+}
+
+.sp-sub-title {
+  font-size: 32px;
+  font-weight: 850;
+  color: #111827;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin: 0 0 14px;
+}
+
+.sp-lead {
+  font-size: 16px;
+  line-height: 1.52;
+  color: #374151;
+  margin: 0;
+  max-width: 580px;
+  font-weight: 450;
+}
+
+/* Timeline */
+.sp-timeline-wrap {
+  margin: 6px 0 10px;
+}
+
+.sp-section-heading {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: #111827;
+  text-transform: uppercase;
+  margin: 0 0 18px;
+}
+
+.sp-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.sp-timeline::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  bottom: 21px;
+  left: 20px;
+  width: 2px;
+  background: #cbd5e1;
+  z-index: 1;
+}
+
+.sp-time-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.sp-time-marker {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fee2e2;
+  border: 1.5px solid #ef4444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #dc2626;
+  box-shadow: 0 2px 6px rgba(239, 68, 68, 0.12);
+}
+
+.sp-svg-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.sp-time-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sp-time-title {
+  font-size: 17.5px;
+  font-weight: 850;
+  color: #111827;
+  letter-spacing: -0.015em;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.sp-time-desc {
+  font-size: 14.5px;
+  line-height: 1.45;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Left Footer */
+.sp-left-footer {
+  padding-top: 14px;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.12);
+  font-size: 12px;
+  font-weight: 800;
+  color: #4b5563;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+/* ====================================================
+   RIGHT PANEL (DEEP BLACK TECHNICAL)
+==================================================== */
+.sparta-right-panel {
+  background: #0b0c10;
+  padding: 42px 54px 28px 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.sp-right-topline {
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+.sp-top-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.sp-red-sq-dark {
+  color: #e11d24;
+  font-size: 11px;
+}
+
+.sp-right-section {
+  margin: 4px 0;
+}
+
+.sp-sec-heading-light {
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+
+/* 2x2 Stats Grid with Hairline Cross Dividers */
+.sp-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sp-stat-item {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 18px 14px 0;
+}
+
+.sp-stat-item:nth-child(2),
+.sp-stat-item:nth-child(4) {
+  padding-left: 28px;
+  padding-right: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.sp-stat-item:nth-child(1),
+.sp-stat-item:nth-child(2) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 16px;
+}
+
+.sp-stat-item:nth-child(3),
+.sp-stat-item:nth-child(4) {
+  padding-top: 16px;
+}
+
+.sp-stat-num {
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.sp-stat-num.red-text {
+  color: #e11d24;
+}
+
+.sp-stat-label {
+  font-size: 15px;
+  color: #94a3b8;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+/* Innovations Grid */
+.inno-section {
+  margin: 6px 0;
+}
+
+.sp-innovations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.sp-inno-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.sp-inno-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sp-inno-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.sp-inno-desc {
+  font-size: 14px;
+  line-height: 1.45;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Tech Box */
+.sp-tech-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  padding: 13px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4px 0 8px;
+}
+
+.sp-tech-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sp-tech-label {
+  font-size: 11.5px;
+  font-weight: 850;
+  letter-spacing: 0.16em;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.sp-tech-list {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+}
+
+.sp-tech-crest {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sp-pg-svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* Right Footer */
+.sp-right-footer {
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: right;
+  flex-shrink: 0;
+}

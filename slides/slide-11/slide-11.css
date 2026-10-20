@@ -1,0 +1,400 @@
+/* ----------------------------------------------------
+   SLIDE 11: SPARTA DC-DEVELOPMENT — DETAIL KONTRIBUSI & REKAYASA (EDITORIAL SPLIT)
+---------------------------------------------------- */
+.sp-dc-split-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-sizing: border-box;
+}
+
+/* ====================================================
+   LEFT PANEL (WARM CREAM EDITORIAL)
+==================================================== */
+.sp-dc-left-panel {
+  background: #f6f4ee;
+  padding: 42px 52px 28px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #111827;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sp-dc-left-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1.5px solid #111827;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.sp-dc-top-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #111827;
+}
+
+.sp-dc-sq {
+  color: #e65f2b;
+  font-size: 11px;
+}
+
+.sp-dc-top-right {
+  color: #111827;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+/* Left Hero */
+.sp-dc-left-hero {
+  margin: 6px 0;
+}
+
+.sp-dc-main-title {
+  font-size: 44px;
+  font-weight: 900;
+  color: #e65f2b;
+  letter-spacing: -0.035em;
+  line-height: 1.04;
+  margin: 0;
+}
+
+.sp-dc-orange-rule {
+  width: 44px;
+  height: 3.5px;
+  background: #e65f2b;
+  border-radius: 2px;
+  margin: 12px 0 14px;
+}
+
+.sp-dc-sub-title {
+  font-size: 26px;
+  font-weight: 850;
+  color: #111827;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin: 0 0 10px;
+}
+
+.sp-dc-lead {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #374151;
+  margin: 0;
+  max-width: 620px;
+  font-weight: 450;
+}
+
+/* Timeline */
+.sp-dc-timeline-wrap {
+  margin: 4px 0 8px;
+}
+
+.sp-dc-section-heading {
+  font-size: 13.5px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  color: #111827;
+  text-transform: uppercase;
+  margin: 0 0 18px;
+}
+
+.sp-dc-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sp-dc-timeline::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  bottom: 21px;
+  left: 20px;
+  width: 2px;
+  background: #cbd5e1;
+  z-index: 1;
+}
+
+.sp-dc-time-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sp-dc-time-item:hover {
+  transform: translateX(4px);
+}
+
+.sp-dc-time-marker {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #fff5ee;
+  border: 1.8px solid #e65f2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #e65f2b;
+  box-shadow: 0 2px 6px rgba(230, 95, 43, 0.12);
+  margin-top: 1px;
+  transition: all 180ms ease;
+}
+
+.sp-dc-time-item:hover .sp-dc-time-marker {
+  background: #ffe6db;
+  border-color: #d44d18;
+  box-shadow: 0 4px 12px rgba(230, 95, 43, 0.22);
+}
+
+.sp-dc-svg-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.sp-dc-time-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-top: 1px;
+}
+
+.sp-dc-time-title {
+  font-size: 17px;
+  font-weight: 850;
+  color: #111827;
+  letter-spacing: -0.015em;
+  margin: 0;
+  line-height: 1.25;
+  transition: color 180ms ease;
+}
+
+.sp-dc-time-item:hover .sp-dc-time-title {
+  color: #e65f2b;
+}
+
+.sp-dc-time-desc {
+  font-size: 14px;
+  line-height: 1.48;
+  color: #4b5563;
+  margin: 0;
+}
+
+/* Left Footer */
+.sp-dc-left-footer {
+  padding-top: 14px;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.12);
+  font-size: 12px;
+  font-weight: 800;
+  color: #4b5563;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+/* ====================================================
+   RIGHT PANEL (DEEP BLACK TECHNICAL)
+==================================================== */
+.sp-dc-right-panel {
+  background: #0b0c10;
+  padding: 42px 52px 28px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.sp-dc-right-topline {
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+.sp-dc-top-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.sp-dc-sq-dark {
+  color: #e65f2b;
+  font-size: 11px;
+}
+
+.sp-dc-right-section {
+  margin: 6px 0;
+}
+
+.sp-dc-sec-heading-light {
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+}
+
+/* 2x2 Stats Grid with Hairline Cross Dividers */
+.sp-dc-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sp-dc-stat-item {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 18px 14px 0;
+  box-sizing: border-box;
+}
+
+.sp-dc-stat-item:nth-child(2),
+.sp-dc-stat-item:nth-child(4) {
+  padding-left: 28px;
+  padding-right: 0;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.sp-dc-stat-item:nth-child(1),
+.sp-dc-stat-item:nth-child(2) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 16px;
+}
+
+.sp-dc-stat-item:nth-child(3),
+.sp-dc-stat-item:nth-child(4) {
+  padding-top: 16px;
+}
+
+.dc-orange-text {
+  color: #e65f2b;
+}
+
+.sp-dc-stat-num {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.sp-dc-stat-label {
+  font-size: 15px;
+  color: #94a3b8;
+  margin-top: 6px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+/* Innovations Grid */
+.sp-dc-innovations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.sp-dc-inno-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sp-dc-inno-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.sp-dc-inno-title {
+  font-size: 14.5px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.sp-dc-inno-desc {
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: #94a3b8;
+  margin: 0;
+}
+
+/* Technology Box */
+.sp-dc-tech-box {
+  background: #14151a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.sp-dc-tech-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sp-dc-tech-label {
+  font-size: 11px;
+  font-weight: 850;
+  letter-spacing: 0.14em;
+  color: #e65f2b;
+  text-transform: uppercase;
+}
+
+.sp-dc-tech-list {
+  font-size: 12.5px;
+  color: #e2e8f0;
+  font-weight: 550;
+  line-height: 1.4;
+}
+
+.sp-dc-tech-crest {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sp-dc-pg-svg {
+  width: 30px;
+  height: 30px;
+  opacity: 0.9;
+}
+
+/* Right Footer */
+.sp-dc-right-footer {
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 12px;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}

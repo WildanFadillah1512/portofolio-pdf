@@ -1,0 +1,319 @@
+/* ----------------------------------------------------
+   SLIDE 12: SPARTA DC-DEVELOPMENT — DOKUMENTASI ANTARMUKA PRODUKSI (EDITORIAL SPLIT)
+---------------------------------------------------- */
+.s12-split-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 34% 66%;
+  box-sizing: border-box;
+}
+
+/* ====================================================
+   LEFT PANEL (WARM CREAM EDITORIAL)
+==================================================== */
+.s12-left-panel {
+  background: #f6f4ee;
+  padding: 44px 48px 30px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #111827;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.s12-left-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1.5px solid #111827;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.s12-top-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #111827;
+}
+
+.s12-dc-sq {
+  color: #e65f2b;
+  font-size: 11px;
+}
+
+.s12-top-right {
+  color: #111827;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+/* Hero Section */
+.s12-left-hero {
+  margin: 14px 0 16px;
+}
+
+.s12-eyebrow {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 850;
+  color: #e65f2b;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.s12-main-title {
+  font-size: 46px;
+  font-weight: 900;
+  color: #111827;
+  letter-spacing: -0.035em;
+  line-height: 1.02;
+  margin: 0 0 12px;
+}
+
+.s12-orange-rule {
+  width: 44px;
+  height: 3.5px;
+  background: #e65f2b;
+  border-radius: 2px;
+  margin-bottom: 14px;
+}
+
+.s12-lead {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #4b5563;
+  margin: 0;
+  font-weight: 450;
+  max-width: 480px;
+}
+
+/* 4 Feature Cards */
+.s12-cards-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin: 10px 0 16px;
+}
+
+.s12-mod-card {
+  background: #efebe2;
+  border-radius: 6px;
+  padding: 16px 22px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #e65f2b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  transition: all 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
+}
+
+.s12-mod-card:hover {
+  background: #eae4d7;
+  border-left-color: #c84e1b;
+  transform: translateX(4px);
+  box-shadow: 0 4px 14px rgba(230, 95, 43, 0.12);
+}
+
+.s12-card-head {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.s12-card-num {
+  font-size: 15.5px;
+  font-weight: 900;
+  color: #e65f2b;
+  letter-spacing: 0.04em;
+}
+
+.s12-card-title {
+  font-size: 15.5px;
+  font-weight: 850;
+  color: #111827;
+  letter-spacing: -0.015em;
+}
+
+.s12-card-desc {
+  font-size: 13.5px;
+  line-height: 1.45;
+  color: #64748b;
+  margin: 4px 0 0;
+}
+
+/* Left Footer */
+.s12-left-footer {
+  padding-top: 14px;
+  border-top: 1.5px solid rgba(0, 0, 0, 0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 800;
+  color: #4b5563;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.s12-footer-dc {
+  color: #e65f2b;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+/* ====================================================
+   RIGHT PANEL (DEEP BLACK TECHNICAL)
+==================================================== */
+.s12-right-panel {
+  background: #0b0c10;
+  padding: 42px 48px 28px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.s12-right-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+.s12-top-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.s12-dc-sq-dark {
+  color: #e65f2b;
+  font-size: 11px;
+}
+
+.s12-top-meta-right {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+/* 2x2 Grid Screenshot Cards */
+.s12-grid-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  margin: auto 0;
+  height: calc(100% - 90px);
+}
+
+.s12-grid-card {
+  background: #14151a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.s12-grid-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(230, 95, 43, 0.4);
+  box-shadow: 0 8px 24px rgba(230, 95, 43, 0.15);
+}
+
+.s12-grid-header {
+  padding: 8px 14px;
+  background: #1a1c23;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.s12-gh-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.s12-gh-num {
+  font-size: 11px;
+  font-weight: 900;
+  color: #e65f2b;
+  letter-spacing: 0.05em;
+}
+
+.s12-gh-title {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #f1f5f9;
+}
+
+.s12-gh-tag {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e65f2b;
+  background: rgba(230, 95, 43, 0.12);
+  border: 1px solid rgba(230, 95, 43, 0.3);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.s12-img-wrap {
+  flex: 1;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #0d0e12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s12-shot-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+/* Right Footer */
+.s12-right-footer {
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #94a3b8;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
