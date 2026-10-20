@@ -1,0 +1,28 @@
+/* AstroLearn (Proyek 01): panel krem + hitam seperti slide lain, aksen teks biru. Dipakai slide 18-19 */
+.al { --a: #0e7490; --ad: #22d3ee; display: grid; grid-template-columns: 36% 64%; color: #111827; }
+.al-l { background: #f6f4ee; padding: 30px 40px 28px 42px; display: flex; flex-direction: column; justify-content: space-between; border-right: 1px solid rgba(0, 0, 0, 0.1); overflow: hidden; }
+.al-r { background: #0b0c10; padding: 30px 42px 28px; display: flex; flex-direction: column; justify-content: space-between; color: #fff; overflow: hidden; }
+.al-top { display: flex; justify-content: space-between; align-items: center; padding-bottom: 10px; border-bottom: 1.5px solid #111827; font-size: 12px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; flex-shrink: 0; }
+.al-top b { color: var(--a); font-weight: 800; }
+.al-top b::before { content: "■"; margin-right: 8px; font-size: 11px; }
+.al-r .al-top { border-bottom-color: rgba(255, 255, 255, 0.14); color: rgba(255, 255, 255, 0.55); }
+.al-r .al-top b { color: var(--ad); }
+.al-k { font-size: 12px; font-weight: 850; letter-spacing: 0.12em; text-transform: uppercase; color: var(--a); margin-bottom: 8px; }
+.al-h { font-size: 52px; font-weight: 900; letter-spacing: -0.04em; line-height: 1; margin-bottom: 14px; }
+.al-p { font-size: 16px; line-height: 1.55; color: #4b5563; }
+.al-cards { display: flex; flex-direction: column; gap: 12px; }
+.al-card { background: #efebe2; border: 1px solid rgba(0, 0, 0, 0.04); border-left: 3.5px solid var(--a); border-radius: 5px; padding: 14px 18px; }
+.al-card h3 { display: flex; align-items: baseline; gap: 10px; font-size: 16px; font-weight: 850; letter-spacing: -0.015em; }
+.al-card h3 i { font-style: normal; color: var(--a); }
+.al-card p { font-size: 13.5px; line-height: 1.45; color: #64748b; margin-top: 5px; }
+.al-bot { padding-top: 10px; border-top: 1.5px solid rgba(0, 0, 0, 0.12); display: flex; justify-content: space-between; font-size: 12px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #4b5563; }
+.al-bot span:last-child { color: var(--a); font-weight: 900; }
+.al-frame { border: 1px solid rgba(255, 255, 255, 0.14); border-radius: 8px; overflow: hidden; background: #14151a; cursor: zoom-in; }
+.al-frame img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.al-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.al-stats div { background: #14151a; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 6px; padding: 14px 18px; }
+.al-stats b { display: block; font-size: 34px; font-weight: 850; letter-spacing: -0.03em; }
+.al-stats span { font-size: 11.5px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255, 255, 255, 0.5); }
+.al-stack { display: flex; align-items: center; gap: 16px; padding: 14px 20px; background: #14151a; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 6px; font-size: 14px; font-weight: 650; color: rgba(255, 255, 255, 0.85); }
+.al-stack span { font: 750 11.5px monospace; letter-spacing: 0.14em; padding: 5px 10px; border: 1px solid var(--ad); border-radius: 3px; color: var(--ad); }
+.al-stack a { margin-left: auto; font: 600 12.5px monospace; color: var(--ad); }

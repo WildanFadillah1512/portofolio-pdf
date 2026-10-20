@@ -1,0 +1,7 @@
+/* Slide 19: galeri fitur 2x2 di panel hitam */
+.al-tiles { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; align-content: center; padding: 20px 0 8px; }
+.al-tiles figure { min-width: 0; }
+.al-tiles figcaption { display: grid; grid-template-columns: auto 1fr; column-gap: 10px; margin-top: 10px; }
+.al-tiles figcaption i { font: 700 13px/24px monospace; font-style: normal; letter-spacing: 0.1em; color: var(--ad); }
+.al-tiles figcaption h3 { font-size: 18px; font-weight: 800; letter-spacing: -0.01em; }
+.al-tiles figcaption p { grid-column: 2; font-size: 13.5px; line-height: 1.45; margin-top: 3px; color: rgba(255, 255, 255, 0.62); }
