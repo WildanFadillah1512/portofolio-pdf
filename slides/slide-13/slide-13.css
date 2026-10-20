@@ -258,5 +258,5 @@
 }
 
 #slide-13 .architectural-bar { background: #b8860b; }
-#slide-13 .company-logo-frame { background: #0b0c10; border-radius: 6px; overflow: hidden; }
-#slide-13 .company-logo-clean { height: 48px; filter: none; }
+#slide-13 .company-logo-frame { background: transparent; padding: 0; border: none; box-shadow: none; }
+#slide-13 .company-logo-clean { height: 44px; width: auto; display: block; background: transparent; filter: none; }
