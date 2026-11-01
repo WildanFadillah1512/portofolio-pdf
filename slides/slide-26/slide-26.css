@@ -1,0 +1,5 @@
+/* Slide 26: penutup, memakai chapter-container/slide-dark dari base.css; hanya menambah baris kontak */
+.end-contacts { margin-top: 44px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 48px; max-width: 900px; }
+.end-contacts a { display: flex; flex-direction: column; gap: 5px; padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, 0.14); color: #ffffff; text-decoration: none; font-size: 20px; font-weight: 650; letter-spacing: -0.01em; transition: border-color 150ms ease; }
+.end-contacts a:hover { border-top-color: var(--red); }
+.end-contacts a span { font-size: 12px; font-weight: 750; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); }

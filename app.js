@@ -228,11 +228,11 @@ document.querySelectorAll(".stage-viewport").forEach((viewportEl) => {
   });
 });
 
-// Zoom generik untuk screenshot proyek (AstroLearn)
+// Zoom generik untuk screenshot proyek. Caption diambil dari data-caption (default: AstroLearn, proyek 01)
 document.querySelectorAll("[data-zoom]").forEach((el) => {
   el.addEventListener("click", () => {
     const img = el.querySelector("img");
-    if (img) openLightbox(img.src, el.dataset.title, "AstroLearn \u00b7 https://education-tatasurya.netlify.app/");
+    if (img) openLightbox(img.src, el.dataset.title, el.dataset.caption || "AstroLearn \u00b7 https://education-tatasurya.netlify.app/");
   });
 });
 

@@ -1,0 +1,8 @@
+/* Slide 21: tiga layar utama sebagai baris gambar + keterangan di panel hitam (aksen .pt dari slide-20.css) */
+.pt-rows { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 22px; padding: 16px 0 6px; }
+.pt-row { min-width: 0; display: grid; grid-template-columns: 470px 1fr; gap: 30px; align-items: center; }
+.pt-row figcaption { display: grid; grid-template-columns: auto 1fr; column-gap: 10px; align-content: center; }
+.pt-row figcaption i { font: 700 13px/28px monospace; font-style: normal; letter-spacing: 0.1em; color: var(--ad); }
+.pt-row figcaption h3 { font-size: 22px; font-weight: 800; letter-spacing: -0.01em; }
+.pt-row figcaption p { grid-column: 2; font-size: 14.5px; line-height: 1.5; margin-top: 6px; color: rgba(255, 255, 255, 0.62); }
+.pt-row figcaption code { grid-column: 2; justify-self: start; margin-top: 12px; padding: 4px 9px; font: 700 11px monospace; letter-spacing: 0.12em; color: var(--ad); border: 1px solid rgba(251, 113, 133, 0.45); border-radius: 3px; }

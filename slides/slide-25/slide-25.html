@@ -1,0 +1,72 @@
+<!-- Slide 25: Proyek 04 — Garage Coffee (Fitur & Alur Pemesanan) -->
+<section class="slide al gc" id="slide-25" aria-labelledby="gc-fitur-title">
+  <div class="al-l">
+    <header class="al-top" data-step><b>PROYEK 04 / GARAGE COFFEE</b><span>FITUR &amp; MODUL</span></header>
+    <div data-step style="--d:80ms">
+      <div class="al-k">Dari meja ke dapur tanpa antre</div>
+      <h2 id="gc-fitur-title" class="al-h">FITUR UTAMA</h2>
+      <p class="al-p">Logika bisnis dipisah ke service layer dan dibungkus transaksi database, sehingga data pesanan dan
+        stok tetap konsisten di setiap alur.</p>
+    </div>
+    <div class="al-cards" data-step style="--d:140ms">
+      <div class="al-card">
+        <h3><i>+</i>Checkout QRIS Dua Tahap</h3>
+        <p>Isi identitas dulu, lalu bayar QRIS dengan total pas dan unggah bukti (tipe file divalidasi, maks 5 MB)
+          untuk diverifikasi kasir.</p>
+      </div>
+      <div class="al-card">
+        <h3><i>+</i>Pemotongan Stok Atomik</h3>
+        <p>OrderService dan InventoryService berjalan dalam DB::transaction: bila satu langkah gagal, seluruh
+          perubahan di-rollback.</p>
+      </div>
+      <div class="al-card">
+        <h3><i>+</i>Akses Berbasis Peran</h3>
+        <p>Spatie Permission memisahkan Owner, Kasir, dan Barista, lalu mengarahkan tiap peran ke layar kerjanya
+          setelah login.</p>
+      </div>
+    </div>
+    <footer class="al-bot" data-step style="--d:200ms"><span>Proyek Garage Coffee</span><span>E-Menu + POS +
+        KDS</span></footer>
+  </div>
+  <div class="al-r">
+    <header class="al-top" data-step><b>ALUR PEMESANAN PELANGGAN</b><span>KLIK GAMBAR UNTUK ZOOM</span></header>
+    <div class="gc-tiles">
+      <figure data-step style="--d:100ms">
+        <div class="al-frame" data-zoom data-title="Detail Produk &amp; Instruksi Khusus"
+          data-caption="Garage Coffee &middot; E-Menu pelanggan"><img src="assets/gc-produk.jpg"
+            alt="Modal detail Garage Espresso dengan kolom instruksi khusus dan pengatur jumlah" /></div>
+        <figcaption><i>01</i>
+          <h3>Pilih Menu</h3>
+          <p>Modal produk dengan instruksi khusus dan jumlah, harga langsung terhitung.</p>
+        </figcaption>
+      </figure>
+      <figure data-step style="--d:160ms">
+        <div class="al-frame" data-zoom data-title="Keranjang Belanja"
+          data-caption="Garage Coffee &middot; E-Menu pelanggan"><img src="assets/gc-keranjang.jpg"
+            alt="Drawer keranjang berisi satu Garage Espresso dengan total dan tombol Bayar via QRIS" /></div>
+        <figcaption><i>02</i>
+          <h3>Keranjang</h3>
+          <p>Drawer geser berisi ringkasan item dan total, siap lanjut ke pembayaran.</p>
+        </figcaption>
+      </figure>
+      <figure data-step style="--d:220ms">
+        <div class="al-frame" data-zoom data-title="Detail Pesanan"
+          data-caption="Garage Coffee &middot; E-Menu pelanggan"><img src="assets/gc-pesanan.jpg"
+            alt="Form detail pesanan berisi nama, nomor meja atau take away, dan catatan tambahan" /></div>
+        <figcaption><i>03</i>
+          <h3>Detail Pesanan</h3>
+          <p>Nama, nomor meja atau take away, dan catatan, tanpa perlu membuat akun.</p>
+        </figcaption>
+      </figure>
+      <figure data-step style="--d:280ms">
+        <div class="al-frame" data-zoom data-title="Scan &amp; Bayar QRIS"
+          data-caption="Garage Coffee &middot; E-Menu pelanggan"><img src="assets/gc-qris.jpg"
+            alt="Modal pembayaran QRIS dengan kode order, nominal, dan unggah bukti pembayaran" /></div>
+        <figcaption><i>04</i>
+          <h3>Bayar QRIS</h3>
+          <p>Kode order unik, nominal pas, dan unggah bukti bayar; status bisa dilacak.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>

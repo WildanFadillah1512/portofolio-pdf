@@ -1,0 +1,72 @@
+<!-- Slide 23: Proyek 03 — Desa Cikahuripan (Fitur & Modul) -->
+<section class="slide al dc" id="slide-23" aria-labelledby="dc-fitur-title">
+  <div class="al-l">
+    <header class="al-top" data-step><b>PROYEK 03 / DESA CIKAHURIPAN</b><span>FITUR &amp; MODUL</span></header>
+    <div data-step style="--d:80ms">
+      <div class="al-k">Tanpa ketergantungan developer</div>
+      <h2 id="dc-fitur-title" class="al-h">FITUR UTAMA</h2>
+      <p class="al-p">Arsitektur hybrid relasional + JSONB membuat konten desa bisa berkembang tanpa kode baru, dengan
+        keamanan data warga dan batas koneksi database yang tetap terjaga.</p>
+    </div>
+    <div class="al-cards" data-step style="--d:140ms">
+      <div class="al-card">
+        <h3><i>+</i>Hybrid Relasional + JSONB</h3>
+        <p>Tabel inti untuk berita, pengaduan, dan akun; konten dinamis di JSONB. Menghapus field tidak menghapus data
+          lama.</p>
+      </div>
+      <div class="al-card">
+        <h3><i>+</i>Pengaduan Anonim &amp; Terlacak</h3>
+        <p>Kode acak LAP-YYYY-XXXXXX untuk melacak laporan tanpa login; NIK dan kontak pelapor tidak pernah tampil di
+          publik.</p>
+      </div>
+      <div class="al-card">
+        <h3><i>+</i>Hemat Koneksi &amp; Cache</h3>
+        <p>Pool singleton (max 1) menjaga batas 20 koneksi database; cache memori 60 detik dibersihkan saat data
+          berubah.</p>
+      </div>
+    </div>
+    <footer class="al-bot" data-step style="--d:200ms"><span>Proyek Desa Cikahuripan</span><span>Portal publik + panel
+        admin</span></footer>
+  </div>
+  <div class="al-r">
+    <header class="al-top" data-step><b>DOKUMENTASI ANTARMUKA</b><span>KLIK GAMBAR UNTUK ZOOM</span></header>
+    <div class="al-tiles">
+      <figure data-step style="--d:100ms">
+        <div class="al-frame" data-zoom data-title="Gerbang Login Admin"
+          data-caption="Desa Cikahuripan &middot; https://website-desa-five.vercel.app/" style="aspect-ratio:39/20"><img
+            src="assets/desa-login.jpg" alt="Halaman login admin Portal Admin Sistem Informasi Desa dengan label Sistem Tertutup" /></div>
+        <figcaption><i>01</i>
+          <h3>Gerbang Admin Tertutup</h3>
+          <p>Login di rute tersembunyi (bukan /login) dengan sesi JWT dalam cookie HttpOnly.</p>
+        </figcaption>
+      </figure>
+      <figure data-step style="--d:160ms">
+        <div class="al-frame" data-zoom data-title="Dynamic Page Builder"
+          data-caption="Desa Cikahuripan &middot; https://website-desa-five.vercel.app/" style="aspect-ratio:39/20"><img
+            src="assets/desa-builder.jpg" alt="Dasbor Dynamic Page Builder berisi komponen data per halaman Beranda dan Profil" /></div>
+        <figcaption><i>02</i>
+          <h3>Dynamic Page Builder</h3>
+          <p>Komponen data tiap halaman publik dikelola dari satu dasbor, lengkap dengan konfigurasi field.</p>
+        </figcaption>
+      </figure>
+      <figure data-step style="--d:220ms">
+        <div class="al-frame" data-zoom data-title="Manajemen Pengaduan Masyarakat"
+          data-caption="Desa Cikahuripan &middot; https://website-desa-five.vercel.app/" style="aspect-ratio:39/20"><img
+            src="assets/desa-pengaduan.jpg" alt="Panel admin pengaduan masyarakat dengan ringkasan status dan daftar laporan" /></div>
+        <figcaption><i>03</i>
+          <h3>Manajemen Pengaduan</h3>
+          <p>Ringkasan status, filter laporan, dan tanggapan resmi yang bisa dilacak warga.</p>
+        </figcaption>
+      </figure>
+      <figure data-step style="--d:280ms">
+        <div class="al-frame" data-zoom data-title="Manajemen Aparatur Desa"
+          data-caption="Desa Cikahuripan &middot; https://website-desa-five.vercel.app/" style="aspect-ratio:39/20"><img
+            src="assets/desa-aparatur.jpg" alt="Daftar akun aparatur desa dengan peran Admin dan Aparatur" /></div>
+        <figcaption><i>04</i>
+          <h3>Aparatur Desa</h3>
+          <p>Akun operator dengan peran Admin atau Aparatur, dan password di-hash dengan bcrypt.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>

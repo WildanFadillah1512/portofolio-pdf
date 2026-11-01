@@ -1,0 +1,8 @@
+/* Slide 25: alur checkout sebagai 4 baris gambar potret + keterangan di panel hitam (aksen .gc dari slide-24.css) */
+.gc-tiles { flex: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 26px 28px; align-content: center; padding: 18px 0 6px; }
+.gc-tiles figure { min-width: 0; display: grid; grid-template-columns: 190px 1fr; gap: 16px; align-items: center; }
+.gc-tiles .al-frame { aspect-ratio: 3/4; }
+.gc-tiles figcaption { display: grid; grid-template-columns: auto 1fr; column-gap: 10px; align-content: center; }
+.gc-tiles figcaption i { font: 700 13px/24px monospace; font-style: normal; letter-spacing: 0.1em; color: var(--ad); }
+.gc-tiles figcaption h3 { font-size: 18px; font-weight: 800; letter-spacing: -0.01em; }
+.gc-tiles figcaption p { grid-column: 2; font-size: 13.5px; line-height: 1.45; margin-top: 4px; color: rgba(255, 255, 255, 0.62); }
